@@ -1,0 +1,47 @@
+@import "../../scss/variable";
+.yellow-form {
+  &-label {
+    font-size: 1.5rem;
+    font-weight: 500;
+    display: block;
+    margin: 1.7rem 0rem;
+    padding-left: 10px;
+  }
+  &-input {
+    width: 100%;
+    color: black;
+    border-radius: 15px;
+    padding: 1rem 1rem;
+    border: 1.5px solid $yellow;
+
+    &::-webkit-input-placeholder {
+      /* Edge */
+      color: rgba(128, 128, 128, 0.574);
+      font-size: 2rem;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  &-error {
+    margin-left: 8px;
+    color: red;
+    // color: green;
+    font-size: 10px;
+    font-weight: 400;
+  }
+}
+
+.is-invalid {
+  border: 1.5px solid red;
+}
+
+.login-forget {
+  & > * {
+    color: gray;
+    text-decoration: underline;
+    font-weight: 300;
+    font-size: 1rem;
+    margin-left: 1rem;
+  }
+}

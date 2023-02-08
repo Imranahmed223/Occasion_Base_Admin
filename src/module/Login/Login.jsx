@@ -1,8 +1,11 @@
 import React from "react";
+import "./Login.scss";
 import { Formik, Form } from "formik";
 import * as Yup from "yup";
-import { logo } from "../../assests";
+import { logo, loginImage } from "../../assests";
 import { Link } from "react-router-dom";
+
+import { YellowInput, Button } from "../../components";
 
 const Login = () => {
   const validate = Yup.object({
@@ -15,7 +18,7 @@ const Login = () => {
       <div className="login">
         <div className="login-container">
           <div className="login-container-left">
-            <h2>LOGIN</h2>
+            <img src={logo} alt="logo" />
             <Formik
               initialValues={{
                 email: "",
@@ -29,7 +32,7 @@ const Login = () => {
               {(formik) => (
                 <div className="login-form">
                   <Form>
-                    {/* <YellowInput
+                    <YellowInput
                       label="Enter your Email"
                       name="email"
                       type="email"
@@ -39,13 +42,13 @@ const Login = () => {
                       label="Password"
                       name="password"
                       type="password"
-                    /> */}
+                    />
                     <div className="login-forget">
                       <Link to="/">forgot password ?</Link>
                     </div>
 
                     <div className="login-form-btn">
-                      <Button text="Submit" type="submit" />
+                      <Button text="login" type="submit" />
                     </div>
                   </Form>
                 </div>
@@ -53,7 +56,7 @@ const Login = () => {
             </Formik>
           </div>
           <div className="login-container-right">
-            <img src={signimage} alt="Sign Up" />
+            <img src={loginImage} alt="Sign In" />
           </div>
         </div>
       </div>

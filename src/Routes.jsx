@@ -3,16 +3,20 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import LayOut from "./commonComponents/LayOut/LayOut";
 // import Login from "./module/Login/Login";
 
-import { Login } from "./module";
+import { Login, DashBoard, VenderForms, Settings } from "./module";
 
 const Routess = () => {
   return (
     <>
       <Router>
         <Routes>
-          <Route path="" element={<Login />} />
+          <Route path="/" element={<Login />} />
           <Route path="" element={<LayOut />}>
-            {/* <Route path="/dashboard" element={<DashBoard />}></Route>
+            <Route path="/dashboard" element={<DashBoard />}></Route>
+            <Route path="/venderFroms" element={<VenderForms />}></Route>
+            <Route path="/settings" element={<Settings />}></Route>
+
+            {/*
             <Route path="/create_event" element={<CreateEvent />}></Route>
             <Route path="/settings" element={<Settings />}></Route> */}
           </Route>

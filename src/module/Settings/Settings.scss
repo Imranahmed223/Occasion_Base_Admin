@@ -1,0 +1,15 @@
+@import "../../scss/variable";
+.settings {
+  &-container {
+    &-edit {
+      background-color: $nav-background;
+      margin: 2rem 0rem;
+      padding: 4rem 0rem;
+    }
+    &-password {
+      background-color: $nav-background;
+      margin: 2rem 0rem;
+      padding: 4rem 0rem;
+    }
+  }
+}

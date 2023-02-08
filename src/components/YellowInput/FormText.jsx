@@ -13,7 +13,7 @@ const FormText = ({ label, ...props }) => {
         id="message"
         cols="30"
         rows="6"
-        className={`form-text ${meta.touched && meta.error && "is-invalid"}`}
+        className={`form-input ${meta.touched && meta.error && "is-invalid"}`}
         {...field}
         {...props}
         autoComplete="off"

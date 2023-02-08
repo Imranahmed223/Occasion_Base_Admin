@@ -1,21 +1,23 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
 import "./SideBar.scss";
-// import menu from "../../assets/menu.svg";
-// import plat from "../../assets/Sidebar/plat.svg";
-// import user from "../../assets/Sidebar/user.svg";
-
-import dashboard from "../../assests/sidebar/dashboard.svg";
-import create from "../../assests/sidebar/create.svg";
-import manage from "../../assests/sidebar/manage.svg";
-import messange from "../../assests/sidebar/messange.svg";
-import services from "../../assests/sidebar/services.svg";
-import settings from "../../assests/sidebar/settings.svg";
-
-//////
-import menu from "../../assests/sidebar/menu.svg";
-import { AnimatePresence, motion } from "framer-motion";
 import SideBarMenu from "./SideBarMenu";
+import { NavLink } from "react-router-dom";
+
+import { AnimatePresence, motion } from "framer-motion";
+
+import {
+  dashboard,
+  analytics,
+  faqs,
+  membership,
+  message,
+  settings,
+  userinterface,
+  usericon,
+  venderform,
+  menu,
+} from "../../assests";
+
 const routes = [
   {
     path: "/dashboard",
@@ -24,37 +26,59 @@ const routes = [
     subRoutes: [],
   },
   {
-    path: "/services",
-    name: "My Services",
-    icon: services,
+    path: "/venderforms",
+    name: "Vendor forms",
+    icon: venderform,
     exact: true,
     subRoutes: [],
   },
   {
-    path: "/create-event",
-    name: "Create",
-    icon: create,
+    path: "/analytics",
+    name: "Analytics",
+    icon: analytics,
+    exact: true,
+    subRoutes: [],
+  },
+
+  {
+    path: "/user_interface",
+    name: "User Interface features",
+    icon: userinterface,
     exact: true,
     subRoutes: [],
   },
   {
-    path: "/manage-memberships",
-    name: "Manage Memberships",
-    icon: manage,
-    exact: true,
-    subRoutes: [],
-  },
-  {
-    path: "/settings",
-    name: "Settings",
-    icon: settings,
+    path: "/user",
+    name: "User",
+    icon: usericon,
     exact: true,
     subRoutes: [],
   },
   {
     path: "/message",
     name: "Message",
-    icon: messange,
+    icon: message,
+    exact: true,
+    subRoutes: [],
+  },
+  {
+    path: "/membership",
+    name: "Membership",
+    icon: membership,
+    exact: true,
+    subRoutes: [],
+  },
+  {
+    path: "/sttings",
+    name: "Settings",
+    icon: settings,
+    exact: true,
+    subRoutes: [],
+  },
+  {
+    path: "/faqs",
+    name: "FAQs",
+    icon: faqs,
     exact: true,
     subRoutes: [],
   },

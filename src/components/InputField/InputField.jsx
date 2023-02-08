@@ -1,16 +1,17 @@
 import React from "react";
-import "./FormInput.scss";
+// import "./FormInput.scss";
+import "./InputField.scss";
 import { ErrorMessage, useField } from "formik";
-const FormInput = ({ label, place, ...props }) => {
+const FormInput = ({ ...props }) => {
   const [field, meta] = useField(props);
   return (
     <>
       <div className="forminput-container">
-        <label htmlFor={field.name} className="form-label">
+        {/* <label htmlFor={field.name} className="form-label">
           {label}
-        </label>
+        </label> */}
         <input
-          placeholder={place}
+          //   placeholder={place}
           type="text"
           className={`form-input ${meta.touched && meta.error && "is-invalid"}`}
           {...field}
