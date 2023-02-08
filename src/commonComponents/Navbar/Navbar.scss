@@ -1,0 +1,26 @@
+@import "../../scss/variable";
+.navbar {
+  padding: 0.2rem 2rem;
+  background-color: $nav-background;
+  // width: 100%;
+
+  &-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // position: fixed;
+
+    &-logo {
+      & > img {
+        width: 8rem;
+        height: 4.5rem;
+      }
+    }
+
+    &-menu {
+      & > img {
+        height: 2rem;
+      }
+    }
+  }
+}

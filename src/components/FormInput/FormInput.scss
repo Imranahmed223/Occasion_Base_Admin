@@ -1,0 +1,60 @@
+@import "../../scss/variable";
+.forminput-container {
+  & > input {
+    padding: 1rem;
+  }
+}
+
+.form {
+  &-label {
+    // font-size: 15px;
+    font-size: 1.2rem;
+
+    display: block;
+    // margin-bottom: 2px;
+    // margin-left: 4px;
+    margin: 2rem 0.3rem;
+  }
+  &-input {
+    width: 100%;
+    color: black;
+    border-radius: 5rem;
+    // padding: 1.5rem 4rem;
+
+    // margin-bottom: 20px;
+    border: 1.5px solid rgba(128, 128, 128, 0.286);
+    &::-webkit-input-placeholder {
+      /* Edge */
+      color: rgba(128, 128, 128, 0.574);
+      font-size: 2rem;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  &-error {
+    position: absolute;
+    // margin-top: -px;
+    margin-left: 15px;
+    color: red;
+    font-size: 10px;
+    font-weight: 300;
+  }
+}
+
+.is-invalid {
+  border: 1px solid red;
+}
+.form-text {
+  border: 1.5px solid rgba(128, 128, 128, 0.286);
+  border-radius: 1rem;
+  width: 100%;
+  &::-webkit-input-placeholder {
+    /* Edge */
+    color: rgba(128, 128, 128, 0.574);
+    font-size: 2rem;
+  }
+  &:focus {
+    outline: none;
+  }
+}

@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Condensed:wght@400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+body {
+  font-family: "Montserrat";
+}
+
+// Common Style Classes
+.d-flex {
+  display: flex;
+}
+.align-item-center {
+  display: flex;
+  align-items: center;
+}
+.space-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.space-around {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.space-evenly {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}

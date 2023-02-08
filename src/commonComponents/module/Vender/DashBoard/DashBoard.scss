@@ -1,0 +1,90 @@
+@import "../../../scss/variable";
+.dashboard {
+  &-container {
+    display: flex;
+    // align-items: center;
+    &-content {
+      width: 100%;
+    }
+  }
+}
+
+// New Code
+.dashboard {
+  &-content {
+    padding: 3rem;
+    & > h2 {
+      font-size: 2.5rem;
+      font-weight: 300;
+      margin: 2rem 0rem;
+    }
+    &-card {
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      gap: 1rem;
+    }
+  }
+}
+
+//////////////////////
+/// Sub Component
+
+// Text Box
+
+.textbox {
+  // width: 250px;
+  &-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 1rem;
+    padding: 2rem;
+    & > h4 {
+      font-size: 1.3rem;
+      font-weight: 400;
+    }
+    & > h1 {
+      font-size: 5rem;
+      font-weight: 500;
+      color: $yellow;
+      margin: 4.5rem 0rem;
+    }
+    & > p {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+.imagebox {
+  // width: 250px;
+
+  &-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 1rem;
+    padding: 2rem;
+    & > h4 {
+      font-size: 1.3rem;
+      font-weight: 400;
+    }
+    // & > h1 {
+    //   font-size: 6rem;
+    //   font-weight: 500;
+    //   color: $yellow;
+    //   margin: 4rem 0rem;
+    // }
+    & > img {
+      width: 7rem;
+      height: 7rem;
+      margin: 4rem 0rem;
+    }
+    & > p {
+      font-size: 0.8rem;
+    }
+  }
+}
