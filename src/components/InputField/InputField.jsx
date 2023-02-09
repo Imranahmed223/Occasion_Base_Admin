@@ -6,12 +6,8 @@ const FormInput = ({ ...props }) => {
   const [field, meta] = useField(props);
   return (
     <>
-      <div className="forminput-container">
-        {/* <label htmlFor={field.name} className="form-label">
-          {label}
-        </label> */}
+      <div className="forminput-container" style={{ margin: "2rem" }}>
         <input
-          //   placeholder={place}
           type="text"
           className={`form-input ${meta.touched && meta.error && "is-invalid"}`}
           {...field}

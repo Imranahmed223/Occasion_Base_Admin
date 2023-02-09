@@ -9,7 +9,7 @@ import { FormInput, InputField } from "../../components";
 const Settings = () => {
   const editvalidation = Yup.object({
     email: Yup.string().email("Email is invalid").required("Email is required"),
-    password: Yup.number(),
+    content: Yup.number(),
   });
   return (
     <>
@@ -31,31 +31,16 @@ const Settings = () => {
                 }}
               >
                 {(formik) => (
-                  <div className="login-form">
-                    <Form>
-                      {/* <YellowInput
-                        label="Enter your Email"
-                        name="email"
-                        type="email"
-                      />
+                  <Form>
+                    <InputField name="email" type="email" />
+                    <InputField name="content" type="number" />
 
-                      <YellowInput
-                        label="Password"
-                        name="password"
-                        type="password"
-                      /> */}
-                      <InputField name="email" type="email" />
-                      <InputField name="email" type="email" />
-
-                      <div className="login-forget">
-                        <Link to="/">forgot password ?</Link>
-                      </div>
-
-                      <div className="login-form-btn">
-                        {/* <Button text="login" type="submit" /> */}
-                      </div>
-                    </Form>
-                  </div>
+                    <div className="button-for-update-forms">
+                      <center>
+                        <button>Save</button>
+                      </center>
+                    </div>
+                  </Form>
                 )}
               </Formik>
             </div>
@@ -64,7 +49,33 @@ const Settings = () => {
             <center>
               <h3>Change Password</h3>
             </center>
-            <div className="settings-container-password-form"></div>
+            <div className="settings-container-password-form">
+              <Formik
+                initialValues={{
+                  current_password: "",
+                  new: "",
+                }}
+                validationSchema={editvalidation}
+                onSubmit={(values) => {
+                  console.log(values);
+                }}
+              >
+                {(formik) => (
+                  <Form>
+                    <InputField name="email" type="email" />
+                    <InputField name="content" type="number" />
+                    <InputField name="content" type="number" />
+                    <InputField name="content" type="number" />
+
+                    <div className="button-for-update-forms">
+                      <center>
+                        <button>Save</button>
+                      </center>
+                    </div>
+                  </Form>
+                )}
+              </Formik>
+            </div>
           </div>
         </div>
       </div>
