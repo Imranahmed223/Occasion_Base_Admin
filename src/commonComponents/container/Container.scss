@@ -1,0 +1,26 @@
+.container {
+    &-container {
+      width: 100%;
+    }
+    &-lg {
+      width: 90%;
+      margin: auto;
+    }
+    &-md {
+      width: 80%;
+      margin: auto;
+    }
+    &-sm {
+      width: 70%;
+      margin: auto;
+    }
+    &-half {
+      width: 50%;
+      margin: auto;
+    }
+    &-extra-small {
+      width: 40%;
+      margin: auto;
+    }
+  }
+  

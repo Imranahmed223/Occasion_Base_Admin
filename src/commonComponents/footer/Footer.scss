@@ -1,0 +1,58 @@
+@import "./../../scss/variable";
+@import "./../../scss/mixins";
+
+.footer {
+  background-color: $light-gray;
+  // margin-top: 3rem;
+  padding: 5rem 2rem;
+  &-container {
+    display: flex;
+    padding: 2rem 0rem;
+    &-left {
+      width: 40%;
+      & > * {
+        &:not(:last-child) {
+          margin-bottom: 5rem;
+          color:red!important;
+        }
+      }
+    }
+    &-right {
+      display: flex;
+      flex-direction: column;
+      & > * {
+        & {
+          margin-bottom: 1.2rem;
+          font-size: 1rem;
+          font-style: normal;
+          font-weight: 400;
+          color: black;
+          cursor: pointer;
+          text-decoration: none;
+          text-transform: uppercase;
+        }
+      }
+      .social-icon{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        img:nth-child(1){
+          height: 1.5rem;
+          width: 1.5rem;
+        }
+        img:nth-child(2){
+          height: 1.5rem;
+          width: 1.5rem;
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@include respond(phone) {
+  .footer-container-left{
+    width: 70%;
+  }
+}
+

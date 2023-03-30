@@ -7,14 +7,17 @@ import { AnimatePresence, motion } from "framer-motion";
 
 import {
   dashboard,
+  vendorService,
   analytics,
-  faqs,
-  membership,
+  userInterface,
+  customers,
+  vendor,
   message,
+  membership,
   settings,
-  userinterface,
-  usericon,
-  venderform,
+  faq,
+  verificationRequest,
+  wallet,
   menu,
 } from "../../assests";
 
@@ -26,10 +29,9 @@ const routes = [
     subRoutes: [],
   },
   {
-    path: "/venderforms",
-    name: "Vendor forms",
-    icon: venderform,
-    exact: true,
+    path: "/vendorService",
+    name: "Vendor Service",
+    icon: vendorService,
     subRoutes: [],
   },
   {
@@ -39,18 +41,24 @@ const routes = [
     exact: true,
     subRoutes: [],
   },
-
   {
-    path: "/user_interface",
+    path: "/userInterface",
     name: "User Interface features",
-    icon: userinterface,
+    icon: userInterface,
     exact: true,
     subRoutes: [],
   },
   {
-    path: "/user",
-    name: "User",
-    icon: usericon,
+    path: "/customer",
+    name: "Customer",
+    icon: customers,
+    exact: true,
+    subRoutes: [],
+  },
+  {
+    path: "/vendor",
+    name: "Vendor",
+    icon: vendor,
     exact: true,
     subRoutes: [],
   },
@@ -69,16 +77,30 @@ const routes = [
     subRoutes: [],
   },
   {
-    path: "/sttings",
+    path: "/settings",
     name: "Settings",
     icon: settings,
     exact: true,
     subRoutes: [],
   },
   {
-    path: "/faqs",
+    path: "/faq",
     name: "FAQs",
-    icon: faqs,
+    icon: faq,
+    exact: true,
+    subRoutes: [],
+  },
+  {
+    path: "/verificationRequest",
+    name: "Verification Requests",
+    icon: verificationRequest,
+    exact: true,
+    subRoutes: [],
+  },
+  {
+    path: "/wallet",
+    name: "Wallet",
+    icon: wallet,
     exact: true,
     subRoutes: [],
   },
@@ -137,6 +159,7 @@ const Sidebar = () => {
               if (route.subRoutes) {
                 return (
                   <SideBarMenu
+                    key={index}
                     setIsOpen={setIsOpen}
                     route={route}
                     showAnimation={showAnimation}
@@ -150,7 +173,7 @@ const Sidebar = () => {
                   to={route.path}
                   key={index}
                   className="link"
-                  activeClassName="active"
+                  // activeClassName="active"
                 >
                   <div className="icon">
                     <img src={route.icon} alt="icon" />

@@ -3,6 +3,7 @@ import "./LayOut.scss";
 import Sidebar from "../SideBar/SideBar";
 import Navbar from "../Navbar/Navbar";
 import { Outlet } from "react-router-dom";
+import Footer from "./../footer/Footer";
 const LayOut = ({}) => {
   return (
     <>
@@ -16,6 +17,7 @@ const LayOut = ({}) => {
             <Outlet />
           </div>
         </div>
+        <Footer />
       </div>
     </>
   );

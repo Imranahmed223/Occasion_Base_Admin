@@ -1,42 +1,45 @@
 import logo from "./logo.svg";
 import loginImage from "./login/login.png";
-// Vender Forms
 import acceptedform from "./vender_forms/accepted.svg";
 import holdform from "./vender_forms/hold.svg";
 import newform from "./vender_forms/new.svg";
 import rejectedform from "./vender_forms/rejected.svg";
-import user from "./vender_forms/user.svg";
-
-// Sidebar
-
-import dashboard from "./sidebar/dashboard.svg";
-import analytics from "./sidebar/analytics.svg";
-import faqs from "./sidebar/faqs.svg";
-import membership from "./sidebar/membership.svg";
-import message from "./sidebar/message.svg";
-import settings from "./sidebar/settings.svg";
-import userinterface from "./sidebar/user_interface.svg";
-import usericon from "./sidebar/user.svg";
-import venderform from "./sidebar/venderform.svg";
 import menu from "./sidebar/menu.svg";
+import analytics from "./side-bar/analytics.svg";
+import customers from "./side-bar/customers.svg";
+import dashboard from "./side-bar/dashboard.svg";
+import faq from "./side-bar/faq.svg";
+import membership from "./side-bar/membership.svg";
+import message from "./side-bar/message.svg";
+import settings from "./side-bar/setting.svg";
+import userInterface from "./side-bar/userInterface.svg";
+import vendor from "./side-bar/vendor.svg";
+import vendorService from "./side-bar/vendorService.svg";
+import verificationRequest from "./side-bar/verificationRequest.svg";
+import wallet from "./side-bar/wallet.svg";
+import facebook from "./footer/facebook.svg";
+import insta from "./footer/insta.svg";
 
 export {
+  dashboard,
+  vendorService,
+  analytics,
+  userInterface,
+  customers,
+  vendor,
+  message,
+  membership,
+  settings,
+  faq,
+  verificationRequest,
+  wallet,
   logo,
   loginImage,
-  acceptedform,
-  holdform,
   newform,
+  acceptedform,
   rejectedform,
-  user,
-  // Side bar
+  holdform,
   menu,
-  dashboard,
-  analytics,
-  faqs,
-  membership,
-  message,
-  settings,
-  userinterface,
-  usericon,
-  venderform,
+  facebook,
+  insta,
 };

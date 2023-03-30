@@ -9,8 +9,8 @@
   color: white;
   height: inherit;
   // position: fixed;
-  background-color: #4b4646;
-  height: 100vh;
+  background-color: #212121;
+  height: 80vh;
 }
 
 .top_section {
@@ -67,14 +67,15 @@
 }
 
 .link_text {
-  //   white-space: nowrap;
   font-size: 0.9rem;
   font-weight: 300;
 }
 .link_main {
   font-size: 1rem;
   font-weight: 300;
+  line-height: 2rem;
   cursor: pointer;
+  color: #808080;
 }
 
 .menu {
@@ -101,14 +102,12 @@
 }
 
 .background_menu {
-  background-color: #3c3c3c;
   transition: 0.3s ease-in-out;
-  // padding-bottom: 2rem;
 }
 
 .icon {
   & > img {
-    width: 2rem;
-    height: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
   }
 }
