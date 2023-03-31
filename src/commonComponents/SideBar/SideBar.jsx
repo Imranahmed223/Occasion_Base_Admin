@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./SideBar.scss";
 import SideBarMenu from "./SideBarMenu";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -156,42 +156,32 @@ const Sidebar = () => {
 
           <section className="routes">
             {routes.map((route, index) => {
-              if (route.subRoutes) {
-                return (
-                  <SideBarMenu
-                    key={index}
-                    setIsOpen={setIsOpen}
-                    route={route}
-                    showAnimation={showAnimation}
-                    isOpen={isOpen}
-                  />
-                );
-              }
-
               return (
-                <NavLink
-                  to={route.path}
-                  key={index}
-                  className="link"
-                  // activeClassName="active"
-                >
-                  <div className="icon">
-                    <img src={route.icon} alt="icon" />
-                  </div>
-                  <AnimatePresence>
-                    {isOpen && (
-                      <motion.div
-                        variants={showAnimation}
-                        initial="hidden"
-                        animate="show"
-                        exit="hidden"
-                        className="link_main"
-                      >
-                        {route.name}
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
-                </NavLink>
+                <>
+                  <Link
+                    to={route.path}
+                    key={index}
+                    className="link"
+                    // activeClassName="active"
+                  >
+                    <div className="icon">
+                      <img src={route.icon} alt="icon" />
+                    </div>
+                    <AnimatePresence>
+                      {isOpen && (
+                        <motion.div
+                          variants={showAnimation}
+                          initial="hidden"
+                          animate="show"
+                          exit="hidden"
+                          className="link_main"
+                        >
+                          {route.name}
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </Link>
+                </>
               );
             })}
           </section>
