@@ -22,6 +22,7 @@ import insta from "./footer/insta.svg";
 import firstUserInterfaceImage from "./../assests/userInterface/first.png";
 import secondUserInterfaceImage from "./../assests/userInterface/second.png";
 import thirdUserInterfaceImage from "./../assests/userInterface/third.png";
+import profile from "./../assests/profile.png";
 
 export {
   dashboard,
@@ -48,4 +49,5 @@ export {
   firstUserInterfaceImage,
   secondUserInterfaceImage,
   thirdUserInterfaceImage,
+  profile,
 };
