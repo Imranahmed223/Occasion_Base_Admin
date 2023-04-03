@@ -19,14 +19,16 @@
     width: 100%;
     color: black;
     border-radius: 5rem;
-    // padding: 1.5rem 4rem;
-
-    // margin-bottom: 20px;
     border: 1.5px solid $nav-background;
+    outline:none;
+    border:none;
     &::-webkit-input-placeholder {
       /* Edge */
       color: rgba(128, 128, 128, 0.574);
-      font-size: 2rem;
+      font-size: 1rem;
+      font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
     }
     &:focus {
       outline: none;

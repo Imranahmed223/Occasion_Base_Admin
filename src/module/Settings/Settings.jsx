@@ -15,7 +15,7 @@ const Settings = () => {
     <>
       <div className="settings">
         <div className="settings-container">
-          <div className="settings-container-edit">
+          {/* <div className="settings-container-edit">
             <center>
               <h3>Edit Information</h3>
             </center>
@@ -44,7 +44,7 @@ const Settings = () => {
                 )}
               </Formik>
             </div>
-          </div>
+          </div> */}
           <div className="settings-container-password">
             <center>
               <h3>Change Password</h3>
@@ -62,14 +62,24 @@ const Settings = () => {
               >
                 {(formik) => (
                   <Form>
-                    <InputField name="email" type="email" />
-                    <InputField name="content" type="number" />
-                    <InputField name="content" type="number" />
-                    <InputField name="content" type="number" />
-
+                    <InputField
+                      name="password"
+                      type="password"
+                      placeholder="Current Password"
+                    />
+                    <InputField
+                      name="newPassword"
+                      type="password"
+                      placeholder="New Password"
+                    />
+                    <InputField
+                      name="confirmPassword"
+                      type="password"
+                      placeholder="Confirm Password"
+                    />
                     <div className="button-for-update-forms">
                       <center>
-                        <button>Save</button>
+                        <button className="update_froms_btn">Update</button>
                       </center>
                     </div>
                   </Form>

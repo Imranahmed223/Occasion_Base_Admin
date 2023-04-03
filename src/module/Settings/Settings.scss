@@ -1,4 +1,5 @@
 @import "../../scss/variable";
+@import "./../../scss/mixins";
 .settings {
   &-container {
     &-edit {
@@ -17,12 +18,15 @@
       }
     }
     &-password {
-      background-color: $nav-background;
+      background-color: $darkGray;
       margin: 2rem 0rem;
       padding: 4rem 0rem;
+      height: 100vh;
       & > center {
         & > h3 {
-          font-size: 1.6rem;
+          font-size: 1rem;
+          font-family: 'Montserrat';
+          font-style: normal;
           font-weight: 500;
         }
       }
@@ -33,19 +37,29 @@
     }
   }
 }
-
 .button-for-update-forms {
   & > center {
     & > * {
-      background-color: $yellow;
-      color: white;
+      background-color: $darkYellow;
+      color: black;
       border: none;
       cursor: pointer;
-      font-size: 1.5rem;
-      font-weight: 400;
+      font-size: 1rem;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 500;
       padding: 0.7rem 2.5rem;
       border-radius: 10rem;
       transition: 0.3s ease-in-out;
     }
+  }
+}
+
+@include respond(phone) {
+  .settings-container-password-form{
+    width:70%;
+  }
+  .update_froms_btn{
+    width:30%;
   }
 }
