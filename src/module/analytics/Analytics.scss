@@ -1,0 +1,91 @@
+@import "./../../scss/mixins";
+.analytics_main{
+    margin-left: 2rem;
+    margin-top: 4rem;
+    &_services{
+        display: grid;
+        width:80%;
+        grid-template-rows: auto;
+        grid-template-columns: repeat(3,1fr);
+        grid-column-gap: 1rem;
+        &_box{
+            width:20rem;
+            height:20rem;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 29px;
+            &_heading{
+                color:#000000;
+                font-style: normal;
+                font-weight: 500;
+            }
+            &_list{
+                margin-left: 3.5rem;
+                margin-top: 2rem;
+                line-height: 3rem;
+                font-style: normal;
+                font-weight: 500;
+            }
+            &_list li span{
+                color:#FFC841;
+                margin-left: 0.5rem;
+            }
+        }
+    }
+    &_users{
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 20rem 20rem 20rem 20rem;
+        grid-column-gap: 1rem;
+        &_box{
+            width:20rem;
+            height:18rem;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 12px;
+            margin: 4rem 0;
+            span{
+                color: #000000;
+                font-style: normal;
+                font-weight: 400;
+            }
+            img{
+                margin:1rem 0;
+            }
+            h6{
+                margin-top: 3rem;
+                font-style: normal;
+                font-weight: 400;
+                color: #000000;
+            }
+            p{
+                color: #000000;
+                font-style: normal;
+                font-weight: 500;
+            }
+            h1{
+                font-style: normal;
+                color:#FFC841;
+                margin-top: 25%;
+            }
+        }
+        &_last_box{
+            margin-left: 5rem
+        }
+    }
+}
+
+@include respond(phone) {
+    .analytics_main_services{
+        grid-template-columns: repeat(2,1fr);
+        grid-column-gap: 2rem;
+        grid-row-gap: 1rem;
+    }
+    .analytics_main_users{
+        grid-template-columns: repeat(2,1fr);
+        grid-column-gap: 2rem;
+    }
+    .analytics_main_users_last_box{
+        margin-left: 0px;
+    }
+  }

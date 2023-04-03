@@ -1,7 +1,6 @@
 import { useState } from "react";
 import "./SideBar.scss";
-import SideBarMenu from "./SideBarMenu";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -107,9 +106,15 @@ const routes = [
 ];
 
 const Sidebar = () => {
+  const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
 
+  const getColor = (current) => {
+    if (location.pathname === current) {
+      return "#FFC841";
+    }
+  };
   const showAnimation = {
     hidden: {
       width: 0,
@@ -144,7 +149,6 @@ const Sidebar = () => {
         >
           <div className="top_section">
             <div className="bars">
-              {/* <FaBars /> */}
               <img
                 src={menu}
                 alt="menu"
@@ -158,12 +162,7 @@ const Sidebar = () => {
             {routes.map((route, index) => {
               return (
                 <>
-                  <Link
-                    to={route.path}
-                    key={index}
-                    className="link"
-                    // activeClassName="active"
-                  >
+                  <Link to={route.path} key={index} className="link">
                     <div className="icon">
                       <img src={route.icon} alt="icon" />
                     </div>
@@ -175,6 +174,7 @@ const Sidebar = () => {
                           animate="show"
                           exit="hidden"
                           className="link_main"
+                          style={{ color: getColor(route.path) }}
                         >
                           {route.name}
                         </motion.div>

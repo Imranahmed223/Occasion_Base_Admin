@@ -19,6 +19,9 @@ import verificationRequest from "./side-bar/verificationRequest.svg";
 import wallet from "./side-bar/wallet.svg";
 import facebook from "./footer/facebook.svg";
 import insta from "./footer/insta.svg";
+import firstUserInterfaceImage from "./../assests/userInterface/first.png";
+import secondUserInterfaceImage from "./../assests/userInterface/second.png";
+import thirdUserInterfaceImage from "./../assests/userInterface/third.png";
 
 export {
   dashboard,
@@ -42,4 +45,7 @@ export {
   menu,
   facebook,
   insta,
+  firstUserInterfaceImage,
+  secondUserInterfaceImage,
+  thirdUserInterfaceImage,
 };

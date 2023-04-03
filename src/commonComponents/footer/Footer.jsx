@@ -13,17 +13,17 @@ const Footer = () => {
           <div className="footer-container">
             <div className="footer-container-left">
               <Text className="uppercase">
-                Occasion Base UK Ltd. Company registration number 09309515.
+                {`Occasion Base UK Ltd. Company registration number 09309515`.toUpperCase()}
               </Text>
               <Text className="upppercase">
-                4.7 of 5 by 1223 reviews on Trustpilot
+                {`4.7 of 5 by 1223 reviews on Trustpilot`.toUpperCase()}
               </Text>
             </div>
             <div className="footer-container-right">
-              <Link to="/aboutus">about us</Link>
-              <Link to="/aboutus">sign as a vender</Link>
-              <Link to="/aboutus">FAQ</Link>
-              <Link to="/aboutus">Get In Touch</Link>
+              <Link to="/aboutus">{`about us`.toUpperCase()}</Link>
+              <Link to="/aboutus">{`sign as a vender`.toUpperCase()}</Link>
+              <Link to="/aboutus">{`faq`.toUpperCase()}</Link>
+              <Link to="/aboutus">{`Get In Touch`.toUpperCase()}</Link>
               <div className="social-icon">
                 <img src={insta} alt="insta" style={{ marginTop: "-0.5rem" }} />
                 <img
@@ -32,7 +32,7 @@ const Footer = () => {
                   style={{ marginTop: "-0.5rem" }}
                 />
               </div>
-              <Link to="/aboutus">support</Link>
+              <Link to="/aboutus">{`support`.toUpperCase()}</Link>
             </div>
           </div>
         </Container>
