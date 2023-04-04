@@ -3,8 +3,10 @@ import "./Vendor.scss";
 import Grid from "@mui/material/Grid";
 import { profile } from "./../../assests";
 import { BiSearch } from "react-icons/bi";
+import { useNavigate } from "react-router-dom";
 
 const Vendor = () => {
+  const navigate = useNavigate();
   const vendorArray = [
     {
       image: profile,
@@ -67,7 +69,10 @@ const Vendor = () => {
         {vendorArray.map((data, ind) => {
           return (
             <Grid item xs={6} sm={6} md={4} lg={4} key={ind}>
-              <div className="vendor_info_container">
+              <div
+                className="vendor_info_container"
+                onClick={() => navigate("/vendorProfile")}
+              >
                 <img
                   src={data.image}
                   alt="profile"

@@ -23,6 +23,9 @@ import firstUserInterfaceImage from "./../assests/userInterface/first.png";
 import secondUserInterfaceImage from "./../assests/userInterface/second.png";
 import thirdUserInterfaceImage from "./../assests/userInterface/third.png";
 import profile from "./../assests/profile.png";
+import verified from "./../assests/verified.svg";
+import service from "./../assests/service.png";
+import rating from "./../assests/rating.svg";
 
 export {
   dashboard,
@@ -50,4 +53,7 @@ export {
   secondUserInterfaceImage,
   thirdUserInterfaceImage,
   profile,
+  verified,
+  service,
+  rating,
 };

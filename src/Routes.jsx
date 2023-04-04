@@ -16,6 +16,8 @@ import {
   VerificationRequest,
   Wallet,
   Vendor,
+  CustomerProfile,
+  VendorProfile,
 } from "./module";
 
 const Routess = () => {
@@ -40,6 +42,8 @@ const Routess = () => {
               element={<VerificationRequest />}
             />
             <Route path="/wallet" element={<Wallet />} />
+            <Route path="/customerProfile" element={<CustomerProfile />} />
+            <Route path="/vendorProfile" element={<VendorProfile />} />
           </Route>
         </Routes>
       </Router>

@@ -3,8 +3,10 @@ import "./Customer.scss";
 import Grid from "@mui/material/Grid";
 import { profile } from "./../../assests";
 import { BiSearch } from "react-icons/bi";
+import { useNavigate } from "react-router-dom";
 
 const Customer = () => {
+  const navigate = useNavigate();
   const customerArray = [
     {
       image: profile,
@@ -67,7 +69,10 @@ const Customer = () => {
         {customerArray.map((data, ind) => {
           return (
             <Grid item xs={6} sm={6} md={4} lg={4} key={ind}>
-              <div className="customer_info_container">
+              <div
+                className="customer_info_container"
+                onClick={() => navigate("/customerProfile")}
+              >
                 <img
                   src={data.image}
                   alt="profile"
