@@ -50,20 +50,6 @@ const CustomerProfile = () => {
             16th February 2023
           </p>
         </div>
-        {/* <div className="customer_profile_container_service_images">
-          <p>Services</p>
-          <Grid conatiner>
-            <Grid item lg={6} md={6}>
-              <div>
-                <img src={service} alt="profile" />
-                <div className="customer_profile_container_service_images_box">
-                  <p>{`Price starts from £108/person`.toUpperCase()}</p>
-                  <img src={rating} alt="rating" />
-                </div>
-              </div>
-            </Grid>
-          </Grid>
-        </div> */}
       </div>
     </>
   );
