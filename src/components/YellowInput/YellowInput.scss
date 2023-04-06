@@ -1,23 +1,30 @@
 @import "../../scss/variable";
 .yellow-form {
   &-label {
-    font-size: 1.5rem;
-    font-weight: 500;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
     display: block;
     margin: 1.7rem 0rem;
     padding-left: 10px;
   }
   &-input {
     width: 100%;
-    color: black;
+    color: #363636;
     border-radius: 15px;
     padding: 1rem 1rem;
     border: 1.5px solid $yellow;
+    font-size: 1rem;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
 
     &::-webkit-input-placeholder {
       /* Edge */
-      color: rgba(128, 128, 128, 0.574);
-      font-size: 2rem;
+      color: #363636;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 300;
     }
     &:focus {
       outline: none;
@@ -38,7 +45,9 @@
 
 .login-forget {
   & > * {
-    color: gray;
+    color: #AEAEAE;
+    font-style: normal;
+    font-weight: 400;
     text-decoration: underline;
     font-weight: 300;
     font-size: 1rem;

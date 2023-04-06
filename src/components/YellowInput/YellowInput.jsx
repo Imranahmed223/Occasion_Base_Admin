@@ -9,14 +9,13 @@ const YellowInput = ({ label, ...props }) => {
         {label}
       </label>
       <input
-        // placeholder={label}
+        autoComplete="off"
         type="text"
         className={`yellow-form-input ${
           meta.touched && meta.error && "is-invalid"
         }`}
         {...field}
         {...props}
-        autoComplete="off"
       />
 
       <ErrorMessage
@@ -24,7 +23,6 @@ const YellowInput = ({ label, ...props }) => {
         name={field.name}
         className="yellow-form-error"
       />
-
     </>
   );
 };

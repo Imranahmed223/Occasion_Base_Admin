@@ -31,7 +31,7 @@ const Login = () => {
             >
               {(formik) => (
                 <div className="login-form">
-                  <Form>
+                  <Form autoComplete="off">
                     <YellowInput
                       label="Enter your Email"
                       name="email"
@@ -39,7 +39,7 @@ const Login = () => {
                     />
 
                     <YellowInput
-                      label="Password"
+                      label="Enter Password"
                       name="password"
                       type="password"
                     />
