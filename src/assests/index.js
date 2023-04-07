@@ -27,6 +27,9 @@ import verified from "./../assests/verified.svg";
 import service from "./../assests/service.png";
 import rating from "./../assests/rating.svg";
 import backArrow from "./../assests/back-arrow.svg";
+import promo from "./../assests/promo.svg";
+import deleteIcon from "./../assests/delete.svg";
+import editIcon from "./../assests/edit.svg";
 
 export {
   dashboard,
@@ -58,4 +61,7 @@ export {
   service,
   rating,
   backArrow,
+  promo,
+  deleteIcon,
+  editIcon,
 };

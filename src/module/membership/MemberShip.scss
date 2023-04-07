@@ -1,0 +1,179 @@
+@import "./../../scss/mixins";
+.membership_heading{
+    margin-left: 20%;
+    margin-top: 4%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    &_package{
+        color: #535353;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 2rem;
+    }
+    &_promo_code{
+        display: flex;
+        align-items: center;
+        width: 18rem;
+        height: 4rem;
+        background: #FFC841;
+        border-radius: 28px;
+        img{
+            margin-left: 2rem;
+        }
+        p{
+            color: #000000;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1rem;
+            margin-left: 3rem;
+        }
+    }
+}
+.membership_card{
+    margin-top: 15%;
+    margin-left: 15%;
+    margin-right: 15%;
+    &_box{
+        height:3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2.5rem;
+        &_heading{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width:100%;
+            height: 90%;
+            background: #FFC841;
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+        }
+    }
+    &_box1{
+        height:7rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2.5rem;
+        &_heading{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width:100%;
+            height: 90%;
+            background: #D9D9D9;
+            border-bottom-left-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+            margin-top: -2rem;
+            &_btn{
+                // width:40%;
+                // height:40%;
+                width:70%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #FFC841;
+                margin-top: -0.5rem;
+                border-radius: 2rem;
+                p{
+                    padding-left: 2rem;
+                    color: #535353;
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 400;
+                }
+                img{
+                    width: 3.5rem;
+                    height: 3.5rem;
+                    padding-right: 2rem;
+                }
+            }
+        }
+    }
+    &_list{
+        display: flex;
+        align-items: center;
+        margin-top: 0.5rem;
+        padding-bottom:1rem;
+        border-bottom: 1rem solid #D9D9D9;
+        &_icons{
+            margin-left: 40%;
+            img{
+                width:1.5rem;
+                height: 1.5rem;
+                margin-left: 1rem;
+                cursor:pointer
+            }
+        }
+    }
+}
+
+
+@include respond(phone) {
+    .membership_heading_promo_code{
+        img{
+            width:2rem;
+            height:2rem;
+        }
+    }
+    .membership_card_list{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .membership_card_list_icons{
+        img{
+            width:2rem;
+            height:2rem;
+            margin-left: 0.2rem;
+        }
+    }
+  }
+
+  @include respond(tab-port) {
+    .membership_card_list{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .membership_card_list_icons{
+        img{
+            width:2rem;
+            height:2rem;
+            margin-left: 0.2rem;
+        }
+    }
+  }
+  @include respond(surface) {
+    .membership_card_list{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .membership_card_list_icons{
+        img{
+            width:2rem;
+            height:2rem;
+            margin-left: 0.2rem;
+        }
+    }
+  }
+
+  @include respond(tab-land) {
+    .membership_card_list{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .membership_card_list_icons{
+        img{
+            width:2rem;
+            height:2rem;
+            margin-left: 0.2rem;
+        }
+    }
+  }
