@@ -2,7 +2,7 @@
 
 .userInterface_main{
     margin-left: 20%;
-    margin-top: 5rem;
+    margin-top: 4rem;
     label{
         font-style: normal;
        font-weight: 400;
@@ -48,6 +48,24 @@
         }
     }
 }
+.userInterface_container_btn{
+    margin-left: 16.5%;
+    margin-top: 1.3rem;
+    &_txt{
+        padding:0.1rem 3rem;
+        border: 0px;
+        outline: none;
+        background: #FFC841;
+        border: 3px solid #FFC841;
+        border-radius: 29px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1rem;
+        color:#000000;
+        cursor: pointer;
+    }
+}
 
 
 @include respond(phone) {
@@ -65,47 +83,3 @@
     }
   }
 
-//   @include respond(surface) {
-//     .userInterface_main_images{
-//         width:50%;
-//         button{
-//             width:50%;
-//             margin-left:20%;
-//         }
-//     }
-//     .userInterface_main{
-//         input{
-//             width:55%
-//         }
-//     }
-//   }
-
-//   @include respond(tab-port) {
-//     .userInterface_main_images{
-//         width:50%;
-//         button{
-//             width:50%;
-//             margin-left:20%;
-//         }
-//     }
-//     .userInterface_main{
-//         input{
-//             width:55%
-//         }
-//     }
-//   }
-
-//   @include respond(tab-land) {
-//     .userInterface_main_images{
-//         width:70%;
-//         button{
-//             width:50%;
-//             margin-left:15%;
-//         }
-//     }
-//     .userInterface_main{
-//         input{
-//             width:70%
-//         }
-//     }
-//   }

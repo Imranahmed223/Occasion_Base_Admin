@@ -13,3 +13,4 @@ export { default as Wallet } from "./wallet/Wallet";
 export { default as Vendor } from "./vendor/Vendor";
 export { default as CustomerProfile } from "./../module/customer/CustomerProfile";
 export { default as VendorProfile } from "./../module/vendor/VendorProfile";
+export { default as Review } from "./../module/review/Review";

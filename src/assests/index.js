@@ -26,6 +26,7 @@ import profile from "./../assests/profile.png";
 import verified from "./../assests/verified.svg";
 import service from "./../assests/service.png";
 import rating from "./../assests/rating.svg";
+import backArrow from "./../assests/back-arrow.svg";
 
 export {
   dashboard,
@@ -56,4 +57,5 @@ export {
   verified,
   service,
   rating,
+  backArrow,
 };

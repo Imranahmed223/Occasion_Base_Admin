@@ -1,0 +1,96 @@
+@import "./../../scss/mixins";
+.review_container_heading{
+    display: flex;
+    align-items: center;
+    margin-left: 6%;
+    margin-top: 2%;
+    p{
+        color: #000000;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 2.5rem;
+    }
+    img{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}
+.review_container_input{
+    margin-left: 30%;
+    margin-top: 2%;
+    input{
+        width:40%;
+        padding:0.4rem;
+        background: #F2F1F1;
+        border-radius: 71px;
+        margin-top: 1.6rem;
+        outline:none;
+        border:none;
+    }
+    &_heading{
+        color: #000000;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+    &_box{
+        margin-top: 2%;
+    }
+    label{
+        margin:10% 0;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1rem;
+    }
+    textarea{
+        width:40%;
+        height:10rem;
+        padding:0.4rem;
+        background: #F2F1F1;
+        border-radius: 1rem;
+        margin-top: 1.6rem;
+        outline:none;
+        border:none
+    }
+}
+
+.review_container_btn{
+    margin-left: 12%;
+    margin-top: 1.3rem;
+    &_txt{
+        padding:0.5rem 6rem;
+        border: 0px;
+        outline: none;
+        background: #FFC841;
+        border: 3px solid #FFC841;
+        border-radius: 29px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1rem;
+        color:#000000;
+        cursor: pointer;
+    }
+}
+
+
+@include respond(phone) {
+    .review_container_input{
+        margin-top: 10%;
+        input{
+            width:85%
+        }
+        textarea{
+            width: 85%;
+        }
+    }
+    .review_container_input_box{
+        margin-top: 3%;
+    }
+    .review_container_btn{
+        margin-left: 22%;
+    }
+  }

@@ -64,18 +64,20 @@ const VendorProfile = () => {
             16th February 2023
           </p>
         </div>
-        {/* <div className="vendor_profile_container_service_images">
+        <div className="vendor_profile_container_service_images">
           <p>Services</p>
           <Grid conatiner>
             <Grid item lg={6} md={6}>
-              <img src={service} alt="profile" />
-              <div className="vendor_profile_container_service_images_box">
-                <p>{`Price starts from £108/person`.toUpperCase()}</p>
-                <img src={rating} alt="rating" />
+              <div className="container">
+                <img src={service} alt="girls" />
+                <div className="top">
+                  <h3>price starts from £108/person</h3>
+                  <img src={rating} alt="rating" />
+                </div>
               </div>
             </Grid>
           </Grid>
-        </div> */}
+        </div>
       </div>
     </>
   );

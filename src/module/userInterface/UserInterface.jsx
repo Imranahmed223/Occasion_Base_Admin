@@ -5,8 +5,10 @@ import {
   secondUserInterfaceImage,
   thirdUserInterfaceImage,
 } from "./../../assests";
+import { useNavigate } from "react-router-dom";
 
 const UserInterface = () => {
+  const navigate = useNavigate();
   return (
     <div className="userInterface_main">
       <div>
@@ -29,6 +31,14 @@ const UserInterface = () => {
           <br></br>
           <button>Upload From Device</button>
         </div>
+      </div>
+      <div className="userInterface_container_btn">
+        <button
+          className="userInterface_container_btn_txt"
+          onClick={() => navigate("/review")}
+        >
+          Add Reviews
+        </button>
       </div>
     </div>
   );

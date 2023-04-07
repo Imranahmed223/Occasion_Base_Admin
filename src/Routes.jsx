@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import LayOut from "./commonComponents/LayOut/LayOut";
-
 import {
   Login,
   DashBoard,
@@ -18,6 +17,7 @@ import {
   Vendor,
   CustomerProfile,
   VendorProfile,
+  Review,
 } from "./module";
 
 const Routess = () => {
@@ -44,6 +44,7 @@ const Routess = () => {
             <Route path="/wallet" element={<Wallet />} />
             <Route path="/customerProfile" element={<CustomerProfile />} />
             <Route path="/vendorProfile" element={<VendorProfile />} />
+            <Route path="/review" element={<Review />} />
           </Route>
         </Routes>
       </Router>
