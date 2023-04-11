@@ -62,11 +62,63 @@
     margin-top: 7%;
     background: #F2F1F1;
     border-collapse: collapse;
+    border-radius: 1.5rem;
     tr,td{
         text-align: center;
     }
 }
+table {
+    width: 95%;
+    max-width: 1200px;
+    border-collapse: collapse;
+    --r: 4rem;
+  }
 
+table > thead tr th {
+    background-color: #f2f1f1;
+    border: 0.1rem solid #d6d5d5;
+    padding: 2rem 1rem;
+    border-top: none;
+    font-size: 1rem;
+  }
+
+  table > thead tr th:first-child {
+    border-left: none;
+    border-top-left-radius: var(--r);
+    width: 40%;
+  }
+  table > thead tr th:last-child {
+    border-right: none;
+    border-top-right-radius: var(--r);
+  }
+
+  table > tbody tr td {
+    background-color: #f2f1f1;
+    border: 0.1rem solid #d6d5d5;
+    padding: 2rem 3rem;
+    border-top: none;
+    font-size: 1rem;
+    text-align: center;
+  }
+  table > tbody tr td:first-child {
+    border-left: none;
+  }
+  table > tbody tr td:last-child {
+    border-right: none;
+    text-align: right;
+  }
+  table > tbody tr td > i {
+    cursor: pointer;
+  }
+  table > tbody tr:last-child td {
+    border-bottom: none;
+  }
+  table > tbody tr:last-child td:first-child {
+    border-bottom-left-radius: var(--r);
+  }
+  table > tbody tr:last-child td:last-child {
+    border-bottom-right-radius: var(--r);
+  }
 @include respond(phone) {
     .faq_container{
         input{

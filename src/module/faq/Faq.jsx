@@ -1,6 +1,6 @@
 import React from "react";
 import "./faq.scss";
-import { AiFillDelete } from "react-icons/ai";
+import { deleteIcon } from "./../../assests";
 
 const Faq = () => {
   return (
@@ -19,12 +19,12 @@ const Faq = () => {
         </div>
         <button className="question_button">Save</button>
       </div>
-      <table className="faq_table" border="1">
+      <table className="faq_table">
         <thead>
           <tr>
             <th colspan="3">Question</th>
             <th colspan="7">Answer</th>
-            <th colspan="2">Action</th>
+            <th colspan="2"></th>
           </tr>
         </thead>
         <tbody>
@@ -32,7 +32,7 @@ const Faq = () => {
             <td colspan="3">First Question</td>
             <td colspan="7">First Answer</td>
             <td colspan="2">
-              <AiFillDelete />
+              <img src={deleteIcon} alt="image" />
             </td>
           </tr>
         </tbody>

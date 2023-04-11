@@ -67,12 +67,21 @@ const VendorProfile = () => {
         <div className="vendor_profile_container_service_images">
           <p>Services</p>
           <Grid conatiner>
-            <Grid item lg={6} md={6}>
-              <div className="container">
+            <Grid item lg={6} md={6} sm={12} xs={12}>
+              {/* <div className="container">
                 <img src={service} alt="girls" />
                 <div className="top">
                   <h3>price starts from £108/person</h3>
                   <img src={rating} alt="rating" />
+                </div>
+              </div> */}
+              <div className="card">
+                <img src={service} alt="Sofa" />
+                <div className="top">
+                  <h6>Price starts at $108/person</h6>
+                  <div className="rating">
+                    <img src={rating} alt="rating" />
+                  </div>
                 </div>
               </div>
             </Grid>
