@@ -14,3 +14,5 @@ export { default as Vendor } from "./vendor/Vendor";
 export { default as CustomerProfile } from "./../module/customer/CustomerProfile";
 export { default as VendorProfile } from "./../module/vendor/VendorProfile";
 export { default as Review } from "./../module/review/Review";
+export { default as AddPromoCode } from "./../module/promoCode/AddPromoCode";
+export { default as ShowPromoCode } from "./../module/promoCode/ShowPromoCode";

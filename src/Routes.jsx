@@ -18,6 +18,8 @@ import {
   CustomerProfile,
   VendorProfile,
   Review,
+  AddPromoCode,
+  ShowPromoCode,
 } from "./module";
 
 const Routess = () => {
@@ -37,6 +39,8 @@ const Routess = () => {
             <Route path="/message" element={<Message />} />
             <Route path="/membership" element={<MemberShip />} />
             <Route path="/faq" element={<Faq />} />
+            <Route path="/addPromoCode" element={<AddPromoCode />} />
+            <Route path="/showPromoCode" element={<ShowPromoCode />} />
             <Route
               path="/verificationRequest"
               element={<VerificationRequest />}

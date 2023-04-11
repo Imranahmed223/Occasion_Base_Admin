@@ -2,8 +2,10 @@ import React from "react";
 import { promo, deleteIcon, editIcon } from "./../../assests";
 import "./MemberShip.scss";
 import Grid from "@mui/material/Grid";
+import { useNavigate } from "react-router-dom";
 
 const MemberShip = () => {
+  const navigate = useNavigate();
   const headingArray = [
     {
       heading: "Basic",
@@ -23,7 +25,10 @@ const MemberShip = () => {
     <>
       <div className="membership_heading">
         <p className="membership_heading_package">Membership Package</p>
-        <div className="membership_heading_promo_code">
+        <div
+          className="membership_heading_promo_code"
+          onClick={() => navigate("/showPromoCode")}
+        >
           <img src={promo} alt="promo" />
           <p>Promo Codes</p>
         </div>
