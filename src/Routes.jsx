@@ -1,5 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  HashRouter,
+  Route,
+  Routes,
+} from "react-router-dom";
 import LayOut from "./commonComponents/LayOut/LayOut";
 import {
   Login,
@@ -25,7 +30,7 @@ import {
 const Routess = () => {
   return (
     <>
-      <Router>
+      <HashRouter>
         <Routes>
           <Route path="/" element={<Login />} />
           <Route path="" element={<LayOut />}>
@@ -51,7 +56,7 @@ const Routess = () => {
             <Route path="/review" element={<Review />} />
           </Route>
         </Routes>
-      </Router>
+      </HashRouter>
     </>
   );
 };
