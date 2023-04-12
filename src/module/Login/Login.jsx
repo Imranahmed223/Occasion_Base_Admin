@@ -3,11 +3,12 @@ import "./Login.scss";
 import { Formik, Form } from "formik";
 import * as Yup from "yup";
 import { logo, loginImage } from "../../assests";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import { YellowInput, Button } from "../../components";
 
 const Login = () => {
+  const navigate = useNavigate();
   const validate = Yup.object({
     email: Yup.string().email("Email is invalid").required("Email is required"),
     password: Yup.string().required("Password is required"),
@@ -47,7 +48,10 @@ const Login = () => {
                       <Link to="/">forgot password ?</Link>
                     </div>
 
-                    <div className="login-form-btn">
+                    <div
+                      className="login-form-btn"
+                      onClick={() => navigate("/dashboard")}
+                    >
                       <Button text="login" type="submit" />
                     </div>
                   </Form>
