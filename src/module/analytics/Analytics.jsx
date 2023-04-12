@@ -76,7 +76,7 @@ const Analytics = () => {
       <div className="analytics_main_users">
         <div className="analytics_main_users_box">
           <center>
-            <p>
+            <p className="analytics_main_users_box_p">
               Users
               <br />
               Today
@@ -91,7 +91,7 @@ const Analytics = () => {
               <br />
               Weekly
             </p>
-            <h1>1.2 k</h1>
+            <h1>12 k</h1>
           </center>
         </div>
         <div className="analytics_main_users_box">
@@ -101,10 +101,10 @@ const Analytics = () => {
               <br />
               Monthly
             </p>
-            <h1>1.2 k</h1>
+            <h1>12 k</h1>
           </center>
         </div>
-        <div className="analytics_main_users_box analytics_main_users_last_box">
+        <div className="analytics_main_users_box1 analytics_main_users_last_box">
           <center>
             <span>Real time Active Users by channel</span>
             <img src={line} alt="line" width="50%" />

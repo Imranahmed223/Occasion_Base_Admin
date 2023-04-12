@@ -9,8 +9,11 @@
         grid-template-columns: repeat(3,1fr);
         grid-column-gap: 1rem;
         &_box{
-            width:20rem;
-            height:20rem;
+            width:25rem;
+            height:21rem;
+            // background: #FFFFFF;
+            // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            // border-radius: 29px;
             background: #FFFFFF;
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             border-radius: 29px;
@@ -61,12 +64,48 @@
             p{
                 color: #000000;
                 font-style: normal;
-                font-weight: 500;
+                font-weight: 600;
+                padding-top: 2rem
             }
             h1{
                 font-style: normal;
                 color:#FFC841;
-                margin-top: 25%;
+                margin-top: 5%;
+                font-weight: 600;
+                font-size: 5rem;
+            }
+        }
+        &_box1{
+            width:20rem;
+            height:18rem;
+            border-radius: 12px;
+            margin: 4rem 0;
+            span{
+                color: #000000;
+                font-style: normal;
+                font-weight: 400;
+            }
+            img{
+                margin:1rem 0;
+            }
+            h6{
+                margin-top: 3rem;
+                font-style: normal;
+                font-weight: 400;
+                color: #000000;
+            }
+            p{
+                color: #000000;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 1rem;
+            }
+            h1{
+                font-style: normal;
+                color:#FFC841;
+                margin-top: 5%;
+                font-weight: 400;
+                font-size: 5rem;
             }
         }
         &_last_box{
