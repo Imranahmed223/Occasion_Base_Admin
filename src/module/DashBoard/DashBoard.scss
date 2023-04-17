@@ -1,0 +1,30 @@
+@import "./../../scss/mixins";
+
+.dashboard_container {
+    padding: 2rem 3rem;
+    &_box{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+
+  @include respond(phone) {
+    .dashboard_container_box{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  }
+
+  @include respond(tab-port) {
+    .dashboard_container_box{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  }
+  

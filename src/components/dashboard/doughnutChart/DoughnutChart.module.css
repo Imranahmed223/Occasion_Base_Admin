@@ -1,0 +1,95 @@
+.container {
+  width: 20rem;
+  height: 15rem;
+  /* max-width: calc(95vw - 8rem); */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background: #ffffff;
+  padding: 2rem;
+}
+
+.container > .top {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.container > .top > .left {
+  flex: 1;
+}
+
+.container > .top > .left > h6 {
+  /* font-size: 2rem;
+  color: rgb(6, 6, 45);
+  white-space: nowrap;
+  font-weight: 500;
+  line-height: 2.4rem; */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #000000;
+}
+.container > .top > .left > span {
+  /* font-size: 4rem;
+  color: #f1d379;
+  white-space: nowrap;
+  font-weight: 300;
+  line-height: 4rem; */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  color: #ffc841;
+}
+
+.container > .top > .right {
+  flex: 1;
+  /* padding-top: 1rem; */
+}
+
+.container > .bottom {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.container > .bottom p {
+  /* font-size: 2rem;
+  color: rgb(6, 6, 45);
+  white-space: nowrap;
+  font-weight: 400;
+  line-height: 2.4rem; */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #000000;
+}
+
+.container > .bottom span {
+  /* font-size: 2.3rem;
+  color: rgb(6, 6, 45);
+  white-space: nowrap;
+  font-weight: 400;
+  line-height: 2.8rem; */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #000000;
+}
+
+@media screen and (max-width: 37.5em) {
+  .container {
+    width: 35rem;
+    height: 20rem;
+  }
+}
+
+@media screen and (max-width: 75em) {
+  .container {
+    width: 35rem;
+    height: 20rem;
+  }
+}

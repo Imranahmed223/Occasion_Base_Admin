@@ -30,6 +30,8 @@ import backArrow from "./../assests/back-arrow.svg";
 import promo from "./../assests/promo.svg";
 import deleteIcon from "./../assests/delete.svg";
 import editIcon from "./../assests/edit.svg";
+import wave from "./../assests/wave.svg";
+import waveLeft from "./../assests/waveLeft.svg";
 
 export {
   dashboard,
@@ -64,4 +66,6 @@ export {
   promo,
   deleteIcon,
   editIcon,
+  wave,
+  waveLeft,
 };
