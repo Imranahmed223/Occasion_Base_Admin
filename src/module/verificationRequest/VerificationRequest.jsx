@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./VerificationRequest.scss";
 import { acceptedform, holdform, newform, rejectedform } from "../../assests";
 import Grid from "@mui/material/Grid";
-import { profile } from "./../../assests";
+import { profile1 } from "./../../assests";
 
 const VerificationRequest = () => {
   const [tab1, setTab1] = useState(true);
@@ -13,39 +13,39 @@ const VerificationRequest = () => {
 
   const listArray = [
     {
-      image: profile,
+      image: profile1,
       name: "Robert Hill",
     },
     {
-      image: profile,
+      image: profile1,
       name: "Robert Hill",
     },
     {
-      image: profile,
+      image: profile1,
       name: "Robert Hill",
     },
     {
-      image: profile,
+      image: profile1,
       name: "Robert Hill",
     },
     {
-      image: profile,
+      image: profile1,
       name: "Robert Hill",
     },
     {
-      image: profile,
+      image: profile1,
       name: "Robert Hill",
     },
     {
-      image: profile,
+      image: profile1,
       name: "Robert Hill",
     },
     {
-      image: profile,
+      image: profile1,
       name: "Robert Hill",
     },
     {
-      image: profile,
+      image: profile1,
       name: "Robert Hill",
     },
   ];

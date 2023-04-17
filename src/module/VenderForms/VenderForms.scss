@@ -1,4 +1,4 @@
-.verificationform {
+.venderform {
   &-container {
     padding: 3rem;
     &-cards {
@@ -9,7 +9,7 @@
   }
 }
 
-.verification_application_info_container{
+.vendor_application_info_container{
   width:25rem;
   height:7rem;
   margin-bottom: 2rem;
@@ -36,7 +36,7 @@ font-size: 1.2rem;
 color: #808080;
   }
 }
-.verification_info_main_container{
+.vendor_info_main_container{
   margin-left: 3rem;
   p{
     font-family: 'Montserrat';
@@ -47,7 +47,7 @@ color: #000000;
 opacity: 0.33;
   }
 }
-.verification_application_info_heading{
+.vendor_application_info_heading{
   font-family: 'Montserrat';
 font-style: normal;
 font-weight: 300;

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./VenderForms.scss";
 import { acceptedform, holdform, newform, rejectedform } from "../../assests";
 import Grid from "@mui/material/Grid";
-import { profile } from "./../../assests";
+import { profile1 } from "./../../assests";
 
 const VenderForms = () => {
   const [tab1, setTab1] = useState(true);
@@ -13,39 +13,39 @@ const VenderForms = () => {
 
   const listArray = [
     {
-      image: profile,
+      image: profile1,
       name: "Robert Hill",
     },
     {
-      image: profile,
+      image: profile1,
       name: "Robert Hill",
     },
     {
-      image: profile,
+      image: profile1,
       name: "Robert Hill",
     },
     {
-      image: profile,
+      image: profile1,
       name: "Robert Hill",
     },
     {
-      image: profile,
+      image: profile1,
       name: "Robert Hill",
     },
     {
-      image: profile,
+      image: profile1,
       name: "Robert Hill",
     },
     {
-      image: profile,
+      image: profile1,
       name: "Robert Hill",
     },
     {
-      image: profile,
+      image: profile1,
       name: "Robert Hill",
     },
     {
-      image: profile,
+      image: profile1,
       name: "Robert Hill",
     },
   ];

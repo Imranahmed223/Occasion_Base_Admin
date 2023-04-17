@@ -32,6 +32,7 @@ import deleteIcon from "./../assests/delete.svg";
 import editIcon from "./../assests/edit.svg";
 import wave from "./../assests/wave.svg";
 import waveLeft from "./../assests/waveLeft.svg";
+import profile1 from "./../assests/profile1.svg";
 
 export {
   dashboard,
@@ -68,4 +69,5 @@ export {
   editIcon,
   wave,
   waveLeft,
+  profile1,
 };
