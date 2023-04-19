@@ -17,3 +17,4 @@ export { default as Review } from "./../module/review/Review";
 export { default as AddPromoCode } from "./../module/promoCode/AddPromoCode";
 export { default as ShowPromoCode } from "./../module/promoCode/ShowPromoCode";
 export { default as AcceptRejectForm } from "./../module/acceptRejectForm/AcceptRejectForm";
+export { default as VerificationAcceptReject } from "./../module/verificationAcceptReject/VerificationAcceptReject";

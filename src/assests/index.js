@@ -34,6 +34,7 @@ import wave from "./../assests/wave.svg";
 import waveLeft from "./../assests/waveLeft.svg";
 import profile1 from "./../assests/profile1.svg";
 import vendorFormRightImage from "./../assests/vendorFormRightImage.svg";
+import verificationAccpetReject from "./../assests/verificationAccpetReject.png";
 
 export {
   dashboard,
@@ -72,4 +73,5 @@ export {
   waveLeft,
   profile1,
   vendorFormRightImage,
+  verificationAccpetReject,
 };
