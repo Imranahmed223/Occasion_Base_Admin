@@ -25,6 +25,7 @@ import {
   Review,
   AddPromoCode,
   ShowPromoCode,
+  AcceptRejectForm,
 } from "./module";
 
 const Routess = () => {
@@ -50,6 +51,7 @@ const Routess = () => {
               path="/verificationRequest"
               element={<VerificationRequest />}
             />
+            <Route path="/acceptRejectForm" element={<AcceptRejectForm />} />
             <Route path="/wallet" element={<Wallet />} />
             <Route path="/customerProfile" element={<CustomerProfile />} />
             <Route path="/vendorProfile" element={<VendorProfile />} />

@@ -3,8 +3,10 @@ import "./VenderForms.scss";
 import { acceptedform, holdform, newform, rejectedform } from "../../assests";
 import Grid from "@mui/material/Grid";
 import { profile1 } from "./../../assests";
+import { useNavigate } from "react-router-dom";
 
 const VenderForms = () => {
+  const navigate = useNavigate();
   const [tab1, setTab1] = useState(true);
   const [tab2, setTab2] = useState(false);
   const [tab3, setTab3] = useState(false);
@@ -115,7 +117,15 @@ const VenderForms = () => {
           <Grid container>
             {listArray.map((data, ind) => {
               return (
-                <Grid item xs={6} sm={6} md={4} lg={4} key={ind}>
+                <Grid
+                  item
+                  xs={6}
+                  sm={6}
+                  md={4}
+                  lg={4}
+                  key={ind}
+                  onClick={() => navigate("/acceptRejectForm")}
+                >
                   <div className="vendor_application_info_container">
                     <img
                       src={data.image}
