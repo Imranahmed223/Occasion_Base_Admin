@@ -8,7 +8,11 @@ const ShowPromoCode = () => {
   return (
     <>
       <div className="show_promo_container">
-        <div className="show_promo_container_heading">
+        <div
+          className="show_promo_container_heading"
+          style={{ cursor: "pointer" }}
+          onClick={() => navigate(-1)}
+        >
           <img src={backArrow} alt="backArrow" />
           <p>Back</p>
         </div>

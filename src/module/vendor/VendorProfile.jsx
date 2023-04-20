@@ -1,8 +1,10 @@
 import React from "react";
 import { profile, verified, service, rating } from "./../../assests";
 import Grid from "@mui/material/Grid";
+import { useNavigate } from "react-router-dom";
 
 const VendorProfile = () => {
+  const navigate = useNavigate();
   const isMobile = window.innerWidth <= 768;
   return (
     <>
@@ -24,19 +26,35 @@ const VendorProfile = () => {
           <button className={`button ${isMobile ? "" : "button-show"}`}>
             Visit Shop
           </button>
-          <button className={`button ${isMobile ? "" : "button-show"}`}>
+          <button
+            className={`button ${isMobile ? "" : "button-show"}`}
+            onClick={() => navigate("/message")}
+          >
             Message
           </button>
-          <button className={`button ${isMobile ? "" : "button-show"}`}>
+          <button
+            className={`button ${isMobile ? "" : "button-show"}`}
+            onClick={() =>
+              window.confirm("Are u Sure You Want To Delete This?")
+            }
+          >
             Delete Account
           </button>
           <button className={`button1 ${isMobile ? "" : "button-hide"}`}>
             Shop
           </button>
-          <button className={`button1 ${isMobile ? "" : "button-hide"}`}>
+          <button
+            className={`button1 ${isMobile ? "" : "button-hide"}`}
+            onClick={() => navigate("/message")}
+          >
             Message
           </button>
-          <button className={`button1 ${isMobile ? "" : "button-hide"}`}>
+          <button
+            className={`button1 ${isMobile ? "" : "button-hide"}`}
+            onClick={() =>
+              window.confirm("Are u Sure You Want To Delete This?")
+            }
+          >
             Account
           </button>
         </div>

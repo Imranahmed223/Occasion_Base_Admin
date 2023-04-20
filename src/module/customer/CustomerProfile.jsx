@@ -1,7 +1,9 @@
 import React from "react";
 import { profile, verified } from "./../../assests";
+import { useNavigate } from "react-router-dom";
 
 const CustomerProfile = () => {
+  const navigate = useNavigate();
   return (
     <>
       <div className="customer_profile_container">
@@ -19,8 +21,20 @@ const CustomerProfile = () => {
           />
         </div>
         <div className="customer_profile_container_btn">
-          <button className="customer_profile_container_btn1">Message</button>
-          <button>Delete Account</button>
+          <button
+            className="customer_profile_container_btn1"
+            style={{ cursor: "pointer" }}
+            onClick={() => navigate("/message")}
+          >
+            Message
+          </button>
+          <button
+            onClick={() =>
+              window.confirm("Are u Sure You Want To Delete This?")
+            }
+          >
+            Delete Account
+          </button>
         </div>
       </div>
       <div className="customer_profile_container_service">

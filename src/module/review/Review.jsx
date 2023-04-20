@@ -1,11 +1,17 @@
 import React from "react";
 import "./Review.scss";
 import { backArrow } from "./../../assests";
+import { useNavigate } from "react-router-dom";
 
 const Review = () => {
+  const navigate = useNavigate();
   return (
     <div>
-      <div className="review_container_heading">
+      <div
+        className="review_container_heading"
+        onClick={() => navigate(-1)}
+        style={{ cursor: "pointer" }}
+      >
         <img src={backArrow} alt="backArrow" />
         <p>Back</p>
       </div>
