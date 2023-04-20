@@ -18,6 +18,19 @@ const style = {
   p: 4,
 };
 
+const style1 = {
+  position: "absolute",
+  top: "48%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  width: 300,
+  height: 200,
+  bgcolor: "background.paper",
+  border: "1px solid #FFC841",
+  borderRadius: "4rem",
+  boxShadow: 24,
+  p: 4,
+};
 const AcceptRejectForm = () => {
   const [btn1, setBtn1] = useState(false);
   const [btn2, setBtn2] = useState(false);
@@ -57,7 +70,7 @@ const AcceptRejectForm = () => {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={style}>
+        <Box md={style} lg={style} sm={style1} sx={style} className="web_modal">
           <div className="modal_box">
             <p className="modal_box_typography">Reject Service</p>
             <textarea

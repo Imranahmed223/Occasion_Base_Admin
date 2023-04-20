@@ -75,7 +75,7 @@
         border: none;
         outline: none;
         padding-left: 2rem;
-        padding-top: 2rem;
+        padding-top: 2rem
     }
     textarea::placeholder{
         color: #9A9A9A;
@@ -97,6 +97,9 @@
         font-size: 1rem;
         color: #000000;
     }
+}
+.mobile_modal{
+    display: none;
 }
 
 

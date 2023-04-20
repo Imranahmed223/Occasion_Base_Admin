@@ -1,3 +1,5 @@
+@import "./../../scss/mixins";
+
 .verification_accept_reject_container{
     display: flex;
     justify-content: space-around;
@@ -5,6 +7,9 @@
     &_left{
         margin-left: -20rem;
         margin-top: 4rem;
+        @include respond(tab-port) {
+            margin-left: -10rem;
+          }
         h3{
             color: #A0A0A0;
             font-family: 'Montserrat';
@@ -61,6 +66,10 @@
         width:30rem;
         height:auto;
         margin-right: 1rem;
+        @include respond(tab-port) {
+            margin-top: 2rem;
+            width:38rem
+          }
     }
 }
 .verification_accept_reject_btn_container{
@@ -69,6 +78,7 @@
     align-items: center;
     button{
         margin-left: 2rem;
+
     }
     &_button{
         margin-top: 7rem;
