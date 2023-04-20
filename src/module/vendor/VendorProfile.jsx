@@ -24,7 +24,13 @@ const VendorProfile = () => {
         </div>
         <div className="vendor_profile_container_btn">
           <button className={`button ${isMobile ? "" : "button-show"}`}>
-            Visit Shop
+            <a
+              href="http://68.183.83.184:2028/#/vender-shop"
+              style={{ textDecoration: "none", color: "black" }}
+              target="_blank"
+            >
+              Visit Shop
+            </a>
           </button>
           <button
             className={`button ${isMobile ? "" : "button-show"}`}
