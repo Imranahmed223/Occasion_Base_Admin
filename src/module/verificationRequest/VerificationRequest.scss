@@ -1,3 +1,4 @@
+@import "./../../scss/mixins";
 .verificationform {
   &-container {
     padding: 3rem;
@@ -11,6 +12,9 @@
 
 .verification_application_info_container{
   width:25rem;
+  @include respond(phone) {
+    width: 18rem;
+}
   height:7rem;
   margin-bottom: 2rem;
   margin-left: 2rem;

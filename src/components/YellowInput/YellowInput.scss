@@ -17,14 +17,14 @@
     font-size: 1rem;
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 300;
+    font-weight: bold;
 
     &::-webkit-input-placeholder {
       /* Edge */
       color: #363636;
       font-size: 1rem;
       font-style: normal;
-      font-weight: 300;
+      font-weight: bold;
     }
     &:focus {
       outline: none;

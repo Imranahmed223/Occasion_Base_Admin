@@ -50,6 +50,9 @@
 }
 .verification_accept_reject_container_image_box{
     margin-left: 10rem;
+    @include respond(phone) {
+        margin-left: 2rem;
+      }
     margin-top: 5rem;
 }
 .verification_accept_reject_container_image_heading{

@@ -19,6 +19,9 @@
         background-color: #FFC841;
         border-radius: 5px;
         width:18rem;
+        @include respond(tab-port) {
+            width: 15rem;
+        }
         height:3.5rem;
         margin-left: 2rem;
         display: flex;
@@ -31,6 +34,9 @@
     }
     &_search{
         width:25rem;
+        @include respond(tab-port) {
+            width: 15rem;
+        }
         height:2rem;
         background: #FFFFFF;
          border-radius: 10px;
@@ -61,6 +67,9 @@
 }
 .vendor_info_container{
     width:23rem;
+    @include respond(tab-port) {
+        width: 18rem;
+    }
     height:7rem;
     margin-top: 2rem;
     background: #FFFFFF;

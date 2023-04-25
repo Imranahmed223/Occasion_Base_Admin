@@ -49,7 +49,6 @@
 .container > .right > .top {
   margin-bottom: 2rem;
 }
-
 @media screen and (max-width: 37.5em) {
   .container {
     width: 37rem;
@@ -63,7 +62,7 @@
   .container {
     width: 37rem;
     height: 16rem;
-    margin-top: 4rem;
+    margin-top: 8rem;
     margin-left: 2rem;
   }
 }

@@ -44,18 +44,18 @@ margin-left: 1rem;
   }
 }
 
-@include respond(phone) {
+@include respond(tab-port) {
   .payment {
-    width: 318px;
-    height: 205px;
+   width: 35rem;
+    height: 20rem;
     margin-top: 4rem;
   }
 }
 
-@include respond(tab-port) {
+@include respond(phone) {
   .payment {
-    width: 318px;
-    height: 205px;
+   width: 35rem;
+    height: 20rem;
     margin-top: 4rem;
   }
 }

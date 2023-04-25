@@ -19,6 +19,9 @@
         background-color: #FFC841;
         border-radius: 5px;
         width:18rem;
+        @include respond(tab-port) {
+            width: 15rem;
+        }
         height:3.5rem;
         margin-left: 2rem;
         display: flex;
@@ -32,6 +35,9 @@
     &_search{
         width:25rem;
         height:2rem;
+        @include respond(tab-port) {
+            width: 15rem;
+        }
         background: #FFFFFF;
          border-radius: 10px;
          padding:1rem 2rem;
@@ -61,6 +67,9 @@
 }
 .customer_info_container{
     width:23rem;
+    @include respond(tab-port) {
+        width: 18rem;
+    }
     height:7rem;
     margin-top: 2rem;
     background: #FFFFFF;
