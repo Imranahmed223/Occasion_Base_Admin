@@ -102,7 +102,7 @@
 .mobile_modal{
     display: none;
 }
-@include respond(phone) {
+@include respond(tab-port) {
     .accept_reject_form_container_left_box{
         padding-left: 1rem;
     }

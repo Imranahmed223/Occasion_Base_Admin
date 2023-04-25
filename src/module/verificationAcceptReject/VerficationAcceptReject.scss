@@ -96,7 +96,7 @@
 .mobile_modal{
     display: none;
 }
-@include respond(phone) {
+@include respond(tab-port) {
     .web_modal{
         display: none;
     }
