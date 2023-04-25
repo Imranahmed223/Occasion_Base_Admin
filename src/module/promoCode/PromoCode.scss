@@ -2,7 +2,10 @@
 
 
 .show_promo_container{
-    width:100%;
+    width:calc(100% - 2%);
+    @include respond(tab-port) {
+        width: 100%;
+    }
     display: flex;
     justify-content: space-between;
     align-items: center;
