@@ -1,11 +1,17 @@
 import React from "react";
 import "./PromoCode.scss";
 import { backArrow } from "./../../assests";
+import { useNavigate } from "react-router-dom";
 
 const AddPromoCode = () => {
+  const navigate = useNavigate();
   return (
     <>
-      <div className="add_promo_container_heading">
+      <div
+        className="add_promo_container_heading"
+        style={{ cursor: "pointer" }}
+        onClick={() => navigate(-1)}
+      >
         <img src={backArrow} alt="backArrow" />
         <p>Back</p>
       </div>
