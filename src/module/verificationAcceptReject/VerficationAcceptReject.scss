@@ -92,3 +92,15 @@
         line-height: 24px;
     }
 }
+
+.mobile_modal{
+    display: none;
+}
+@include respond(phone) {
+    .web_modal{
+        display: none;
+    }
+    .mobile_modal{
+        display: block;
+    }
+  }

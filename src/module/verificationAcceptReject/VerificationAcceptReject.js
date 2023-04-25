@@ -18,6 +18,19 @@ const style = {
   p: 4,
 };
 
+const style1 = {
+  position: "absolute",
+  top: "48%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  width: 300,
+  height: 250,
+  bgcolor: "background.paper",
+  border: "1px solid #FFC841",
+  borderRadius: "4rem",
+  boxShadow: 24,
+  p: 4,
+};
 const VerificationAcceptReject = () => {
   const [btn1, setBtn1] = useState(false);
   const [btn2, setBtn2] = useState(false);
@@ -56,6 +69,7 @@ const VerificationAcceptReject = () => {
         onClose={handleClose}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
+        className="web_modal"
       >
         <Box sx={style}>
           <div className="modal_box">
@@ -72,10 +86,31 @@ const VerificationAcceptReject = () => {
       </Modal>
 
       <Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+        className="mobile_modal"
+      >
+        <Box sx={style1}>
+          <div className="modal_box">
+            <p className="modal_box_typography">Reject Service</p>
+            <textarea
+              rows="10"
+              cols="30"
+              type="text"
+              placeholder="provide a reason for rejection"
+            />
+            <button>Submit</button>
+          </div>
+        </Box>
+      </Modal>
+      <Modal
         open={model2}
         onClose={handleModel2}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
+        className="web_modal"
       >
         <Box sx={style}>
           <div className="modal_box">
@@ -92,10 +127,32 @@ const VerificationAcceptReject = () => {
       </Modal>
 
       <Modal
+        open={model2}
+        onClose={handleModel2}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+        className="mobile_modal"
+      >
+        <Box sx={style1}>
+          <div className="modal_box">
+            <p className="modal_box_typography">Accept Service</p>
+            <textarea
+              rows="10"
+              cols="30"
+              type="text"
+              placeholder="provide a reason for accept"
+            />
+            <button>Submit</button>
+          </div>
+        </Box>
+      </Modal>
+
+      <Modal
         open={model3}
         onClose={handleModel3}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
+        className="web_modal"
       >
         <Box sx={style}>
           <div className="modal_box">
@@ -103,6 +160,27 @@ const VerificationAcceptReject = () => {
             <textarea
               rows="20"
               cols="40"
+              type="text"
+              placeholder="provide a reason for hold"
+            />
+            <button>Submit</button>
+          </div>
+        </Box>
+      </Modal>
+
+      <Modal
+        open={model3}
+        onClose={handleModel3}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+        className="mobile_modal"
+      >
+        <Box sx={style1}>
+          <div className="modal_box">
+            <p className="modal_box_typography">Hold Service</p>
+            <textarea
+              rows="10"
+              cols="30"
               type="text"
               placeholder="provide a reason for hold"
             />

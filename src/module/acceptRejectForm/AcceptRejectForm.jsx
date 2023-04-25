@@ -24,7 +24,7 @@ const style1 = {
   left: "50%",
   transform: "translate(-50%, -50%)",
   width: 300,
-  height: 200,
+  height: 250,
   bgcolor: "background.paper",
   border: "1px solid #FFC841",
   borderRadius: "4rem",
@@ -69,8 +69,9 @@ const AcceptRejectForm = () => {
         onClose={handleClose}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
+        className="web_modal"
       >
-        <Box md={style} lg={style} sm={style1} sx={style} className="web_modal">
+        <Box sx={style}>
           <div className="modal_box">
             <p className="modal_box_typography">Reject Service</p>
             <textarea
@@ -85,10 +86,32 @@ const AcceptRejectForm = () => {
       </Modal>
 
       <Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+        className="mobile_modal"
+      >
+        <Box sx={style1}>
+          <div className="modal_box">
+            <p className="modal_box_typography">Reject Service</p>
+            <textarea
+              rows="10"
+              cols="30"
+              type="text"
+              placeholder="provide a reason for rejection"
+            />
+            <button>Submit</button>
+          </div>
+        </Box>
+      </Modal>
+
+      <Modal
         open={model2}
         onClose={handleModel2}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
+        className="web_modal"
       >
         <Box sx={style}>
           <div className="modal_box">
@@ -105,10 +128,32 @@ const AcceptRejectForm = () => {
       </Modal>
 
       <Modal
+        open={model2}
+        onClose={handleModel2}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+        className="mobile_modal"
+      >
+        <Box sx={style1}>
+          <div className="modal_box">
+            <p className="modal_box_typography">Accept Service</p>
+            <textarea
+              rows="10"
+              cols="30"
+              type="text"
+              placeholder="provide a reason for accept"
+            />
+            <button>Submit</button>
+          </div>
+        </Box>
+      </Modal>
+
+      <Modal
         open={model3}
         onClose={handleModel3}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
+        className="web_modal"
       >
         <Box sx={style}>
           <div className="modal_box">
@@ -116,6 +161,27 @@ const AcceptRejectForm = () => {
             <textarea
               rows="20"
               cols="40"
+              type="text"
+              placeholder="provide a reason for hold"
+            />
+            <button>Submit</button>
+          </div>
+        </Box>
+      </Modal>
+
+      <Modal
+        open={model3}
+        onClose={handleModel3}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+        className="mobile_modal"
+      >
+        <Box sx={style1}>
+          <div className="modal_box">
+            <p className="modal_box_typography">Hold Service</p>
+            <textarea
+              rows="10"
+              cols="30"
               type="text"
               placeholder="provide a reason for hold"
             />

@@ -98,16 +98,21 @@
         color: #000000;
     }
 }
+
 .mobile_modal{
     display: none;
 }
-
-
 @include respond(phone) {
     .accept_reject_form_container_left_box{
         padding-left: 1rem;
     }
     .accept_reject_form_container_right_box{
         padding-right: 1rem;
+    }
+    .web_modal{
+        display: none;
+    }
+    .mobile_modal{
+        display: block;
     }
   }
